@@ -1,96 +1,303 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <title>Sarvagya Kaushik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/2e5dacad4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#journals">Journals</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div id="marker"></div>
+      
+        <a href="#intro">Introduction</a>
+        <a href="#About me">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      
     </nav>
-
-    <header id="home">
-      <!-- Home/Introduction section -->
-    </header>
-
-    <section id="projects">
-      <!-- Projects section -->
-    </section>
-
-    <section id="journals">
-      <!-- Journals section -->
-    </section>
-
-    <section id="contact">
-      <!-- Contact section -->
-    </section>
-
-    <script src="app.js"></script>
-  </body>
-</html>
-<header id="home">
-    <h1>Hi, I'm John Doe</h1>
-    <img src="john-doe.jpg" alt="John Doe">
-    <p>I'm a college student majoring in computer science. I enjoy coding, hiking, and playing guitar.</p>
   </header>
-  
-  <section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-      <li>
+  <script type="text/javascript">
+    var marker = document.querySelector('#marker');
+    var item = document.querySelectorAll('header nav a');
+    function indicator(e){
+      marker.style.left = e.offsetLeft+"px";
+      marker.style.width = e.offsetWidth+"px";
+    }
+    item.forEach(link => {
+      link.addEventListener('click', (e)=>{
+        indicator(e.target);
+      })
+    })
+  </script>
+  <section id="intro" class="parallax">
+    <div class="intro-content">
+      <h1 class="animate__animated animate__slideInUp">Welcome to my Portfolio</h1>
+      <p><span class = "auto-input"></span></p>
+    </div>
+  </section>
+  <!-- <h7>About me</h7> -->
+  <h6 class="Text-1">Unleash The Greatness</h6>
+  <div class="magic-about">
+    <h6 class="innerText">Unleash The Greatness</h6>
+  </div>
+  <div id="About me" class="magic-container">
+    <h6 class="animate__animated animate__zoomIn">
+      About me
+    </h6>
+  </div>
+  <!-- <section id="projects">
+    <div class="project">
+      <h2>Project 1</h2>
+      <p>Description of Project 1</p>
+    </div>
+    <div class="project">
+      <h2>Project 2</h2>
+      <p>Description of Project 2</p>
+    </div>
+    <div class="project">
+      <h2>Project 3</h2>
+      <p>Description of Project 3</p>
+    </div>
+
+
+  </section> -->
+  <!-- <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project">
         <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu mauris mauris. Donec nec ultrices eros, vel pharetra neque.</p>
-        <a href="#">View Project</a>
-      </li>
-      <li>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>Description of Project 1</p>
+      </div>
+      <div class="project">
         <h3>Project 2</h3>
-        <p>Aliquam porttitor est at tincidunt consequat. Praesent et ex non leo eleifend ultrices eget eget sapien.</p>
-        <a href="#">View Project</a>
-      </li>
-      <li>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>Description of Project 2</p>
+      </div>
+      <div class="project">
         <h3>Project 3</h3>
-        <p>Nunc tincidunt magna non ipsum sagittis, id efficitur metus semper. Aenean blandit odio nec volutpat vehicula.</p>
-        <a href="#">View Project</a>
-      </li>
-    </ul>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>Description of Project 3</p>
+      </div>
+    </div>
   </section>
-  
-  <section id="journals">
-    <h2>My Journals</h2>
-    <ul>
-      <li>
-        <h3>Journal 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu mauris mauris. Donec nec ultrices eros, vel pharetra neque.</p>
-      </li>
-      <li>
-        <h3>Journal 2</h3>
-        <p>Aliquam porttitor est at tincidunt consequat. Praesent et ex non leo eleifend ultrices eget eget sapien.</p>
-      </li>
-      <li>
-        <h3>Journal 3</h3>
-        <p>Nunc tincidunt magna non ipsum sagittis, id efficitur metus semper. Aenean blandit odio nec volutpat vehicula.</p>
-      </li>
-    </ul>
+ -->
+
+
+<section id = "about-me">
+  <!-- <div class="about-photo">
+    <img src="photo.png" alt="Your Name">
+  </div>
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>My name is sarvagya kaushik I'm a student at IIIT Delhi I am currently enrolled in CSD branch </p>
+  </div> -->
+  <div class="about-container">
+    <div class="about-card">
+      <div class="about-content">
+        <h2>Sarvagya Kaushik</h2>
+        <p>I am a Bachelor's degree student studying Computer Science and Design Engineering, exploring the intersection of technology and creativity. Equipped with technical skills in software development and algorithm design from computer science and user-focused design thinking from design engineering, I am a motivated learner always seeking new opportunities to collaborate and solve real-world problems.</p>
+      </div>
+      <img src="photo.png">
+    </div>
+  </div>
+</section>
+<section id="projects">
+<div class="hero">
+  <h1>
+    Projects
+  </h1>
+  <div class="project-container">
+    <div class="indicator">
+      <span class="btn active"></span>
+      <span class="btn"></span>
+      <span class="btn"></span>
+    </div>
+    <div class="my-projects">
+      <div class="slide-row" id="slide">
+        <div class="slide-col">
+          <div class="project-text">
+            <div class="text-content">
+            <p>Created an application "Green Apron" that promotes healthier and safer alternatives by providing recipes and nutrition information, encouraging users to prepare their own food rather than consuming harmful red meat.
+            </p>
+              <h3>Green Apron</h3>
+              <a href="https://www.figma.com/proto/NDafDIhsjs6hnSesroObdA/VDC-End-Sem-Project?node-id=5-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A2&show-proto-sidebar=1" class="buttona">View Project</a>
+            </div>
+          </div>
+          <div class="project-vid">
+            <!-- <img src="project-1.png"> -->
+            <!-- <iframe width="310" height="350" src="./test.mov" frameborder="0"autoplay="false" allow="encrypted-media" allowfullscreen></iframe> -->
+            <video src="./VDC_Project.mov" width="550" height="350" controls></video>
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="project-text">
+            <div class="text-content">
+            <p>Built a desktop game inspired by the classic Tank Wars Game. Generated a gradle based project using LibGDX, imported it in Android Studio and developed the code using all the Object Oriented Programming Principles.</p>
+              <h3>Tank Stars</h3>
+              <a href="https://github.com/SarvagyaKaushik24/APFinalProject" class="buttona">View Project</a>
+            </div>
+          </div>
+          <div class="project-vid">
+            <!-- <img src="project-1.png"> -->
+            <!-- <iframe width="310" height="350" src="./test.mov" frameborder="0"autoplay="false" allow="encrypted-media" allowfullscreen></iframe> -->
+            <video src="./AP_Project.mov" width="550" height="350" controls></video>
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="project-text">
+            <div class="text-content">
+            <p>Developed a special user program in C which provides an interface to the user to use Linux operating system services. It supports 3 internal commands and 5 external commands and was developed in Artix Linux using Virtual Box.</p>
+              <h3>Linux Shell</h3>
+              <a href="https://github.com/SarvagyaKaushik24/Linux-Shell" class="buttona">View Project</a>
+            </div>
+          </div>
+          <div class="project-vid">
+            <!-- <img src="project-1.png"> -->
+            <!-- <iframe width="310" height="350" src="./test.mov" frameborder="0"autoplay="false" allow="encrypted-media" allowfullscreen></iframe> -->
+            <video id="myVideo" src="./Shell.mov" width="550" height="350" controls></video>
+            <button id="playpausebtn">Play/Pause</button>
+            <!-- <div id="controls">
+              <button id="playPauseBtn">Play</button>
+              <input type="range" id="seekBar" value="0">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- <section id="projects"> -->
+<!-- <div id = "projects" class="container" data-1600= "transform: translateX(0%);"  data-2400= "transform:translateX(-250%)" >
+  <section>
+    <div class="content">
+      <h2>SectionOne</h2>
+      <p> abracadabra</p>
+      </div>
   </section>
+  <section>
+    <div class="content">
+      <h2>SectionTwo</h2>
+      <p> abracadabra</p>
+      </div>
+  </section>
+  <section>
+    <div class="content">
+      <h2>SectionThree</h2>
+      <p> abracadabra</p>
+      </div>
+  </section>
+  <section>
+    <div class="content">
+      <h2>SectionFour</h2>
+      <p> abracadabra</p>
+      </div>
+  </section>
+</div> -->
+<!-- </section> -->
+
+  <section id="contact" class="parallax">
+    <div class="contact-content">
+      <p>Connect with me on:</p>
+      <a href="https://github.com/SarvagyaKaushik24"><i class="fa-brands fa-github"></i></a>
+      <a href="https://instagram.com/sarvagyakaushik_"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/Sarvagya27"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/sarvagya-kaushik-69aa73256/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Sarvagya Kaushik's Portfolio</p>
+  </footer>
+  <script src="./anime-master/lib/anime.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-input", {
+      strings: ["Innovate.", "Create.", "Succeed."],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    })
+  </script>
+  <script type="text/javascript" src="skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
+  <script>
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+    btn[0].onclick = function(){
+      slide.style.transform = "translateX(0px)";
+      for(i=0;i<3;i++){
+        btn[i].classList.remove("active");
+      }
+      this.classList.add("active");
+    }
+    btn[1].onclick = function(){
+      slide.style.transform = "translateX(-800px)";
+      for(i=0;i<3;i++){
+        btn[i].classList.remove("active");
+      }
+      this.classList.add("active");
+    }
+    btn[2].onclick = function(){
+      slide.style.transform = "translateX(-1600px)";
+      for(i=0;i<3;i++){
+        btn[i].classList.remove("active");
+      }
+      this.classList.add("active");
+    }
+  </script>
+  <script>
+    let section = document.querySelector('.magic-about');
+    let text = document.querySelector('.Text-1');
+    let innerText = document.querySelector('.innerText');
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY - 600;
+      if(value>=0){
+        section.style.clipPath = "circle("+ value +"px at center center)";
+        text.style.left = 100 - value / 5 + '%';
+        innerText.style.left = 100 - value / 5 + '%';
+      }
+      else{
+        section.style.clipPath = "circle("+ 0 +"px at center center)";
+        text.style.left = 100 + '%';
+        innerText.style.left = 100 + '%';
+      }
+    })
+  </script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+  <!-- <script>
+    var waypoint = new Waypoint({
+    element: document.getElementById('px-offset-waypoint'),
+    handler: function(direction) {
+      notify('I am 20px from the top of the window')
+    },
+    offset: 20 
+  })
+  $(document).ready(function(){
+    $('.animating_text').waypoint(function(direction){
+      $('.animating_text').addClass('animate__animated animate__zoomIn')
+    }, {
+      offset: '50%'
+    })
+  })
+  </script> -->
   
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    </section>
-  
+</body>
+</html>
