@@ -324,7 +324,7 @@ background-size: cover;
 }
 
 #intro {
-background-image: url('intro-bg.jpg');
+background-image: url('./assets/intro-bg.jpg');
 }
 
 .intro-content {
@@ -534,7 +534,7 @@ h2:hover, p:hover {
   animation: shake 0.5s ease forwards;
 } */
 #contact {
-background-image: url('contact-bg.jpg');
+background-image: url('./assets/contact-bg.jpg');
 }
 
 .contact-content {
